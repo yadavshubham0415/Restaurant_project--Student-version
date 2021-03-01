@@ -33,4 +33,14 @@ public class RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurants;
     }
+
+    //For getting Item total as the total is part of service
+
+    public int getItemTotal() {
+        int total=0;
+
+
+        return total;
+    }
+
 }

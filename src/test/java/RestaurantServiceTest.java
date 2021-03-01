@@ -63,4 +63,11 @@ class RestaurantServiceTest {
         assertEquals(initialNumberOfRestaurants + 1,service.getRestaurants().size());
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //<<<<<<<<<<<<<<<<<<<<<<<<Getting Item Total>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    @Test
+    public void get_item_total_price_of_all_item_inselected_menue(){
+        int itemTotal = service.getItemTotal();
+        assertEquals(388,itemTotal);
+    }
 }
